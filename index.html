@@ -34,9 +34,13 @@
 
 	  
 
-	  for(var i in window.location.split('?')[1].split('&')){
+	  var pl = window.location.split('?')[1].split('&');
 
-		  r.push(i.split('=')[1]);
+	  for(var i = 0; i < pl.length;  i++){
+
+		  r.push(pl[i].split('=')[1]);
+
+		  
 
 	  }
 
