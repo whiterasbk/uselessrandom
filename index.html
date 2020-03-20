@@ -1,29 +1,59 @@
+<!DOCTYPE html>
+
 <html>
 
   <head>
 
-    <link href="css/styles.css" rel="stylesheet">
-
-	<script>
-
-	  var r = (function(a){return a[Math.trunc(Math.random()*a.length)]})(['a', 'b', 'c'])
-
-	  document.write(r)
-
-	  r = window.location
-
-	  document.write(r)
-
-	</script>
+	<title>u</title>
 
   </head>
 
   <body>
 
-    <h1>My Website</h1>
+    <script>
 
-    <p>This is my first website</p>
+	  
+
+	  window.onload = function(){
+
+	    if (r.length == 0)
+
+		  document.write("<h1>如果你看到这句话说明这个页面被我吃了</h1>");
+
+		else
+
+	      document.write("<h1>" + ra(r) + "</h1>");
+
+		
+
+	  };
+
+	  
+
+	  var r = [];
+
+	  
+
+	  for(var i in window.location.split('?')[1].split('&')){
+
+		  r.push(i.split('=')[1]);
+
+	  }
+
+	  
+
+	  function ra(a){
+
+	    return a[Math.trunc(Math.random()*a.length)];
+
+	  }
+
+	  
+
+    </script>
+
+	
 
   </body>
 
-</html>
+</html>		
