@@ -33,8 +33,8 @@
 	  var r = [];
 
 	  
-
-	  var pl = window.location.split('?')[1].split('&');
+          var wl = window.location.hash.replace('#', '');
+	  var pl = wl.split('?')[1].split('&');
 
 	  for(var i = 0; i < pl.length;  i++){
 
